@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "run_id": "507ee774-9a5f-4deb-a582-96d4ab6e0d83",
+  "completed_at_utc": "2026-10-30T08:16:16.114485+00:00",
+  "command": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/python /home/sunchi/AI_Infra_inference_experiment/profile_inference.py",
+  "working_directory": "/home/sunchi/AI_Infra_inference_experiment",
+  "environment_snapshot": "results/environment.json",
+  "environment_snapshot_sha256": "efd8f2f508144973c26555fe22d788c16c953b3dd497d4bccefd64eaab21af33",
+  "configuration": {
+    "model": "resnet18",
+    "device": "cpu",
+    "batch_size": 32,
+    "num_threads": 4,
+    "num_interop_threads": 1,
+    "seed": 20261029,
+    "priming_iterations": 1,
+    "warmup_iterations": 5,
+    "profile_iterations": 3,
+    "activities": [
+      "CPU"
+    ],
+    "record_shapes": true,
+    "profile_memory": false,
+    "with_stack": false
+  },
+  "controller_performance_environment": {
+    "CC": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/x86_64-conda-linux-gnu-gcc",
+    "CXX": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/x86_64-conda-linux-gnu-g++",
+    "LD_LIBRARY_PATH": "/home/sunchi/miniconda3/envs/ai-infra-compile/lib"
+  },
+  "worker_performance_environment": {
+    "CC": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/x86_64-conda-linux-gnu-gcc",
+    "CXX": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/x86_64-conda-linux-gnu-g++",
+    "LD_LIBRARY_PATH": "/home/sunchi/miniconda3/envs/ai-infra-compile/lib",
+    "TORCHINDUCTOR_CACHE_DIR": "<fresh temporary directory per worker>",
+    "OMP_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4"
+  },
+  "isolation": {
+    "process_policy": "fresh subprocess for correctness and each execution mode",
+    "inductor_cache_policy": "fresh TemporaryDirectory per worker; deleted after worker exits",
+    "compilation_profiled": false
+  },
+  "correctness": {
+    "allclose": true,
+    "max_abs_error": 2.9802322387695312e-06,
+    "rtol": 0.0001,
+    "atol": 1e-05
+  },
+  "profiles": [
+    {
+      "execution_mode": "eager",
+      "profile_started_at": "2026-10-30T08:15:57.042489+00:00",
+      "profiled_wall_time_ms": 1688.392804,
+      "operator_count": 112
+    },
+    {
+      "execution_mode": "compiled",
+      "profile_started_at": "2026-10-30T08:16:13.731407+00:00",
+      "profiled_wall_time_ms": 1214.242297,
+      "operator_count": 46
+    }
+  ],
+  "interpretation_limit": "Profiler data is for operator attribution only and must not be used as formal benchmark latency."
+}

@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "collected_at_utc": "2026-10-29T16:01:32.592659+00:00",
+  "collection_command": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/python collect_environment.py --output results/environment.clean.json",
+  "working_directory": "/home/sunchi/AI_Infra_inference_experiment",
+  "os": {
+    "system": "Linux",
+    "release": "5.15.0-139-generic",
+    "version": "#149~20.04.1-Ubuntu SMP Wed Apr 16 08:29:56 UTC 2025",
+    "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+    "machine": "x86_64"
+  },
+  "cpu": {
+    "model": "Intel(R) Core(TM) Ultra 5 125H",
+    "physical_cores": 4,
+    "logical_cores": 4
+  },
+  "gpus": [],
+  "python": {
+    "version": "3.12.16 (main, Oct 26 2026, 11:37:43) [GCC 15.3.0]",
+    "executable": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/python",
+    "implementation": "CPython"
+  },
+  "conda": {
+    "version": "conda 26.9.4",
+    "environment_name": "ai-infra-compile",
+    "prefix": "/home/sunchi/miniconda3/envs/ai-infra-compile"
+  },
+  "pytorch": {
+    "import_ok": true,
+    "torch_version": "2.12.1+cpu",
+    "torchvision_version": "0.27.1+cpu",
+    "torch_compile_available": true,
+    "cuda_available": false,
+    "torch_cuda_version": null,
+    "cudnn_version": null,
+    "num_threads": 4,
+    "num_interop_threads": 4,
+    "parallel_info": "ATen/Parallel:\n\tat::get_num_threads() : 4\n\tat::get_num_interop_threads() : 4\nOpenMP 201511 (a.k.a. OpenMP 4.5)\n\tomp_get_max_threads() : 4\nIntel(R) oneAPI Math Kernel Library Version 2024.2-Product Build 20240605 for Intel(R) 64 architecture applications\n\tmkl_get_max_threads() : 4\nIntel(R) MKL-DNN v3.11.2 (Git Hash 03c022d3ffdcee958cfacbe720048e725fdf644c)\nstd::thread::hardware_concurrency() : 4\nEnvironment variables:\n\tOMP_NUM_THREADS : [not set]\n\tMKL_NUM_THREADS : [not set]\nATen parallel backend: OpenMP\n"
+  },
+  "compilers": {
+    "path_compilers": {
+      "gcc": "gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0",
+      "g++": "g++ (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0",
+      "clang": null,
+      "clang++": null
+    },
+    "configured_compilers": {
+      "CC": {
+        "path": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/x86_64-conda-linux-gnu-gcc",
+        "version": "x86_64-conda-linux-gnu-gcc (conda-forge gcc 13.4.0-20) 13.4.0"
+      },
+      "CXX": {
+        "path": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/x86_64-conda-linux-gnu-g++",
+        "version": "x86_64-conda-linux-gnu-g++ (conda-forge gcc 13.4.0-20) 13.4.0"
+      }
+    }
+  },
+  "system_libraries": {
+    "libc": "ldd (Ubuntu GLIBC 2.31-0ubuntu9.18) 2.31"
+  },
+  "nvidia_smi": {
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=name,memory.total,driver_version",
+      "--format=csv,noheader,nounits"
+    ],
+    "available": false,
+    "returncode": null,
+    "stdout": "",
+    "stderr": "nvidia-smi was not found on PATH"
+  },
+  "environment_variables": {
+    "CC": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/x86_64-conda-linux-gnu-gcc",
+    "CC_FOR_BUILD": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/x86_64-conda-linux-gnu-cc",
+    "CONDA_BUILD_CROSS_COMPILATION": "",
+    "CONDA_BUILD_SYSROOT": "/home/sunchi/miniconda3/envs/ai-infra-compile/x86_64-conda-linux-gnu/sysroot",
+    "CONDA_DEFAULT_ENV": "ai-infra-compile",
+    "CONDA_EXE": "/home/sunchi/miniconda3/bin/conda",
+    "CONDA_PREFIX": "/home/sunchi/miniconda3/envs/ai-infra-compile",
+    "CONDA_PROMPT_MODIFIER": "(ai-infra-compile) ",
+    "CONDA_PYTHON_EXE": "/home/sunchi/miniconda3/bin/python",
+    "CONDA_SHLVL": "1",
+    "CONDA_TOOLCHAIN_BUILD": "x86_64-conda-linux-gnu",
+    "CONDA_TOOLCHAIN_HOST": "x86_64-conda-linux-gnu",
+    "CXX": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/x86_64-conda-linux-gnu-g++",
+    "CXXFILT": "x86_64-conda-linux-gnu-c++filt",
+    "CXXFLAGS": "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sunchi/miniconda3/envs/ai-infra-compile/include",
+    "CXX_FOR_BUILD": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/x86_64-conda-linux-gnu-c++",
+    "LD_LIBRARY_PATH": "/home/sunchi/miniconda3/envs/ai-infra-compile/lib"
+  },
+  "diagnostic_commands": {
+    "conda": {
+      "command": [
+        "conda",
+        "--version"
+      ],
+      "available": true,
+      "returncode": 0,
+      "stdout": "conda 26.9.4",
+      "stderr": ""
+    },
+    "compilers": {
+      "gcc": {
+        "command": [
+          "gcc",
+          "--version"
+        ],
+        "available": true,
+        "returncode": 0,
+        "stdout": "gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0\nCopyright (C) 2019 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+        "stderr": ""
+      },
+      "g++": {
+        "command": [
+          "g++",
+          "--version"
+        ],
+        "available": true,
+        "returncode": 0,
+        "stdout": "g++ (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0\nCopyright (C) 2019 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+        "stderr": ""
+      },
+      "clang": {
+        "command": [
+          "clang",
+          "--version"
+        ],
+        "available": false,
+        "returncode": null,
+        "stdout": "",
+        "stderr": "clang was not found on PATH"
+      },
+      "clang++": {
+        "command": [
+          "clang++",
+          "--version"
+        ],
+        "available": false,
+        "returncode": null,
+        "stdout": "",
+        "stderr": "clang++ was not found on PATH"
+      }
+    },
+    "configured_compilers": {
+      "CC": {
+        "command": [
+          "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/x86_64-conda-linux-gnu-gcc",
+          "--version"
+        ],
+        "available": true,
+        "returncode": 0,
+        "stdout": "x86_64-conda-linux-gnu-gcc (conda-forge gcc 13.4.0-20) 13.4.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+        "stderr": ""
+      },
+      "CXX": {
+        "command": [
+          "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/x86_64-conda-linux-gnu-g++",
+          "--version"
+        ],
+        "available": true,
+        "returncode": 0,
+        "stdout": "x86_64-conda-linux-gnu-g++ (conda-forge gcc 13.4.0-20) 13.4.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+        "stderr": ""
+      }
+    },
+    "lscpu": {
+      "command": [
+        "lscpu"
+      ],
+      "available": true,
+      "returncode": 0,
+      "stdout": "Architecture:                         x86_64\nCPU op-mode(s):                       32-bit, 64-bit\nByte Order:                           Little Endian\nAddress sizes:                        45 bits physical, 48 bits virtual\nCPU(s):                               4\nOn-line CPU(s) list:                  0-3\nThread(s) per core:                   1\nCore(s) per socket:                   4\nSocket(s):                            1\nNUMA node(s):                         1\nVendor ID:                            GenuineIntel\nCPU family:                           6\nModel:                                170\nModel name:                           Intel(R) Core(TM) Ultra 5 125H\nStepping:                             4\nCPU MHz:                              2995.200\nBogoMIPS:                             5990.40\nHypervisor vendor:                    VMware\nVirtualization type:                  full\nL1d cache:                            192 KiB\nL1i cache:                            256 KiB\nL2 cache:                             8 MiB\nL3 cache:                             18 MiB\nNUMA node0 CPU(s):                    0-3\nVulnerability Gather data sampling:   Not affected\nVulnerability Itlb multihit:          Not affected\nVulnerability L1tf:                   Mitigation; PTE Inversion\nVulnerability Mds:                    Mitigation; Clear CPU buffers; SMT Host state unknown\nVulnerability Meltdown:               Mitigation; PTI\nVulnerability Mmio stale data:        Unknown: No mitigations\nVulnerability Reg file data sampling: Not affected\nVulnerability Retbleed:               Mitigation; IBRS\nVulnerability Spec rstack overflow:   Not affected\nVulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:             Mitigation; IBRS; IBPB conditional; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI SW loop, KVM SW loop\nVulnerability Srbds:                  Not affected\nVulnerability Tsx async abort:        Not affected\nFlags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves avx_vnni arat umip gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize flush_l1d arch_capabilities",
+      "stderr": ""
+    },
+    "memory": {
+      "command": [
+        "free",
+        "-b"
+      ],
+      "available": true,
+      "returncode": 0,
+      "stdout": "total        used        free      shared  buff/cache   available\nMem:     8285794304   705163264  6736642048     7942144   843988992  7308922880\nSwap:    2147479552           0  2147479552",
+      "stderr": ""
+    },
+    "libc": {
+      "command": [
+        "ldd",
+        "--version"
+      ],
+      "available": true,
+      "returncode": 0,
+      "stdout": "ldd (Ubuntu GLIBC 2.31-0ubuntu9.18) 2.31\nCopyright (C) 2020 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\nWritten by Roland McGrath and Ulrich Drepper.",
+      "stderr": ""
+    }
+  }
+}

@@ -1,0 +1,11 @@
+name: ai-infra-compile
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12.16
+  - pip=26.2.2
+  - gxx_linux-64=13.4.0
+  - matplotlib-base=3.10.9
+  - pip:
+      - -r requirements.txt

@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.partial.csv
+*.state.json
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.env
+
+# Local diagnostic snapshots retained outside the published artifact set
+results/environment.pre-cleanup*.json

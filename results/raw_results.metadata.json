@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "run_id": "67ab933e-9d70-4b37-af82-66c9527d40c2",
+  "started_at_utc": "2026-10-30T06:25:50.313105+00:00",
+  "completed_at_utc": "2026-10-30T06:39:09.252903+00:00",
+  "command": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/python /home/sunchi/AI_Infra_inference_experiment/benchmark.py --matrix",
+  "working_directory": "/home/sunchi/AI_Infra_inference_experiment",
+  "python_executable": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/python",
+  "conda_environment": "ai-infra-compile",
+  "conda_prefix": "/home/sunchi/miniconda3/envs/ai-infra-compile",
+  "environment_snapshot": "results/environment.json",
+  "environment_snapshot_sha256": "efd8f2f508144973c26555fe22d788c16c953b3dd497d4bccefd64eaab21af33",
+  "result_csv": "results/raw_results.csv",
+  "configuration": {
+    "model": "resnet18",
+    "device": "cpu",
+    "batch_sizes": [
+      1,
+      8,
+      32
+    ],
+    "num_threads": [
+      1,
+      4
+    ],
+    "num_interop_threads": 1,
+    "repetitions": 5,
+    "seed": 20261029,
+    "rtol": 0.0001,
+    "atol": 1e-05,
+    "warmup_iterations": 5,
+    "min_run_time_s": 1.0,
+    "environment_snapshot_sha256": "efd8f2f508144973c26555fe22d788c16c953b3dd497d4bccefd64eaab21af33",
+    "benchmark_script_sha256": "c59089af4512d17f2943387e471bafbde489d653b67274bbccc561000fbe0596",
+    "environment_platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+    "cpu_model": "Intel(R) Core(TM) Ultra 5 125H",
+    "physical_cores": 4,
+    "logical_cores": 4,
+    "python_version": "3.12.16",
+    "torch_version": "2.12.1+cpu",
+    "torchvision_version": "0.27.1+cpu",
+    "execution_mode_order": "odd repetitions: eager then compiled; even repetitions: compiled then eager"
+  },
+  "controller_performance_environment": {
+    "CC": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/x86_64-conda-linux-gnu-gcc",
+    "CXX": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/x86_64-conda-linux-gnu-g++",
+    "LD_LIBRARY_PATH": "/home/sunchi/miniconda3/envs/ai-infra-compile/lib"
+  },
+  "worker_performance_environment": {
+    "CC": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/x86_64-conda-linux-gnu-gcc",
+    "CXX": "/home/sunchi/miniconda3/envs/ai-infra-compile/bin/x86_64-conda-linux-gnu-g++",
+    "LD_LIBRARY_PATH": "/home/sunchi/miniconda3/envs/ai-infra-compile/lib",
+    "TORCHINDUCTOR_CACHE_DIR": "<fresh temporary directory per worker>",
+    "OMP_NUM_THREADS": "<num_threads for current configuration>",
+    "MKL_NUM_THREADS": "<num_threads for current configuration>"
+  },
+  "isolation": {
+    "process_policy": "fresh subprocess per correctness check and mode/repetition",
+    "inductor_cache_policy": "fresh TemporaryDirectory per worker; deleted after worker exits"
+  },
+  "checkpoint": {
+    "resume_count": 0,
+    "completed_measurements": 60,
+    "checkpoint_files_removed_after_success": true
+  },
+  "correctness": {
+    "batch=1,threads=1": {
+      "allclose": true,
+      "max_abs_error": 2.2649765014648438e-06,
+      "rtol": 0.0001,
+      "atol": 1e-05
+    },
+    "batch=1,threads=4": {
+      "allclose": true,
+      "max_abs_error": 2.2649765014648438e-06,
+      "rtol": 0.0001,
+      "atol": 1e-05
+    },
+    "batch=8,threads=1": {
+      "allclose": true,
+      "max_abs_error": 2.9802322387695312e-06,
+      "rtol": 0.0001,
+      "atol": 1e-05
+    },
+    "batch=8,threads=4": {
+      "allclose": true,
+      "max_abs_error": 2.9802322387695312e-06,
+      "rtol": 0.0001,
+      "atol": 1e-05
+    },
+    "batch=32,threads=1": {
+      "allclose": true,
+      "max_abs_error": 2.9802322387695312e-06,
+      "rtol": 0.0001,
+      "atol": 1e-05
+    },
+    "batch=32,threads=4": {
+      "allclose": true,
+      "max_abs_error": 2.9802322387695312e-06,
+      "rtol": 0.0001,
+      "atol": 1e-05
+    }
+  }
+}
